@@ -20,4 +20,4 @@ Cross-Origin-Opener-Policy: same-origin
 Cross-Origin-Embedder-Policy: require-corp
 ```
 
-through ```window.crossOriginIsolated``` flag being set, it is possible to detect if shared memory across threads is supported or not. 
+through [```window.crossOriginIsolated```](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer) flag being set, it is possible to detect if shared memory across threads is supported or not. 
