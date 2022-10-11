@@ -21,3 +21,9 @@ Cross-Origin-Embedder-Policy: require-corp
 ```
 
 through [```window.crossOriginIsolated```](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer) flag being set, it is possible to detect if shared memory across threads is supported or not. 
+
+3. ```dyn&``` keyword
+  a. it is a lot like c++ vtables. when a type is decorated with the keyword, it loses its type information and the variable being passed consist of two pointers, one is a pointer to the instance and the other is to a table of available methods. this involves dynamic dispatch, and type erasure. 
+  b. Invoking a constructor of self type [SelfTy](https://doc.rust-lang.org/std/keyword.SelfTy.html)
+  c. [dyn keyword](https://doc.rust-lang.org/std/keyword.dyn.html)
+  d. [dynamic dispatch](https://doc.rust-lang.org/book/ch17-02-trait-objects.html)
