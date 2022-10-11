@@ -26,7 +26,7 @@ through [```window.crossOriginIsolated```](https://developer.mozilla.org/en-US/d
 #### ```dyn&``` keyword
 it is a lot like c++ vtables. when a type is decorated with the keyword, it loses its type information and the variable being passed consist of two pointers, one is a pointer to the instance and the other is to a table of available methods. this involves dynamic dispatch, and type erasure. 
  
-#### other
+#### others
 b. Invoking a constructor of self type [SelfTy](https://doc.rust-lang.org/std/keyword.SelfTy.html)
 
 c. [dyn keyword](https://doc.rust-lang.org/std/keyword.dyn.html)
@@ -35,3 +35,8 @@ d. [dynamic dispatch](https://doc.rust-lang.org/book/ch17-02-trait-objects.html)
 
 #### Memory seperation and transerable objects
 In the browser, some objects can be transfered across threads. these objects are called [transerable objects](https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects).
+
+1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer
+2. https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects
+3. https://rustwasm.github.io/wasm-bindgen/reference/passing-rust-closures-to-js.html
+4. https://doc.rust-lang.org/reference/types/closure.html
