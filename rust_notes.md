@@ -14,7 +14,7 @@ extern "C"{
 
 ```
 
-#### shared memory
+#### "Secure Context" http headers and shared memory
 to use Rust and shared memory, the server needs to serve the page with specific HTTP headers
 ```http
 Cross-Origin-Opener-Policy: same-origin
@@ -32,3 +32,6 @@ b. Invoking a constructor of self type [SelfTy](https://doc.rust-lang.org/std/ke
 c. [dyn keyword](https://doc.rust-lang.org/std/keyword.dyn.html)
 
 d. [dynamic dispatch](https://doc.rust-lang.org/book/ch17-02-trait-objects.html)
+
+#### Memory seperation and transerable objects
+In the browser, some objects can be transfered across threads. these objects are called [transerable objects](https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects).
